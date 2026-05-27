@@ -33,14 +33,25 @@ public class ActivityController {
 
     
     @PostMapping
-    public ResponseEntity<ActivityResponse> trackActivity(
-          @Valid  @RequestBody ActivityRequest request
-    ) {
+public ResponseEntity<ActivityResponse> trackActivity(
 
-        return ResponseEntity.ok(
-                activityService.trackActivity(request)
-        );
-    }
+        @Valid @RequestBody ActivityRequest request,
+
+        Authentication authentication
+
+) {
+
+    User user =
+            (User) authentication.getPrincipal();
+
+    return ResponseEntity.ok(
+
+            activityService.trackActivity(
+                    request,
+                    user.getId()
+            )
+    );
+}
 
     
     @GetMapping
