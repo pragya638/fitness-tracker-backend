@@ -14,6 +14,7 @@ This project allows users to:
 # Features
 
 ## Authentication & Security
+
 - JWT Authentication
 - Spring Security Integration
 - Password Encryption using BCrypt
@@ -21,20 +22,24 @@ This project allows users to:
 - Stateless Session Management
 
 ## Activity Management
+
 - Track activities
 - Update activities
 - Delete activities
 - Fetch user activities
 
 ## Admin Features
+
 - View all registered users
 - Protected admin APIs
 
 ## API Documentation
+
 - Swagger UI Integration
 - Interactive API Testing
 
 ## DevOps
+
 - Docker Support
 - Docker Compose Support
 - GitHub Version Control
@@ -71,77 +76,177 @@ src/main/java/com/project/fitness
 ├── security
 ├── exception
 ├── config
-API Endpoints
-Authentication APIs
-Register User
+```
+
+---
+
+# API Endpoints
+
+## Authentication APIs
+
+### Register User
+
+```http
 POST /api/auth/register
-Login User
+```
+
+### Login User
+
+```http
 POST /api/auth/login
-Activity APIs
-Create Activity
+```
+
+---
+
+## Activity APIs
+
+### Create Activity
+
+```http
 POST /api/activities
-Get User Activities
+```
+
+### Get User Activities
+
+```http
 GET /api/activities
-Update Activity
+```
+
+### Update Activity
+
+```http
 PUT /api/activities/{activityId}
-Delete Activity
+```
+
+### Delete Activity
+
+```http
 DELETE /api/activities/{activityId}
-Admin APIs
-Get All Users
+```
+
+---
+
+## Admin APIs
+
+### Get All Users
+
+```http
 GET /api/admin/users
-Swagger Documentation
+```
+
+---
+
+# Swagger Documentation
 
 After running the project:
 
+```bash
 http://localhost:8080/swagger-ui/index.html
-Run Project Locally
-Clone Repository
+```
+
+---
+
+# Run Project Locally
+
+## Clone Repository
+
+```bash
 git clone https://github.com/pragya638/fitness-tracker-backend.git
-Move Into Project
+```
+
+## Move Into Project
+
+```bash
 cd fitness-tracker-backend
-Run Application
+```
+
+## Run Application
+
+```bash
 ./mvnw spring-boot:run
-Docker Setup
-Build Docker Image
+```
+
+---
+
+# Docker Setup
+
+## Build Docker Image
+
+```bash
 docker build -t fitness-app .
-Run Docker Container
+```
+
+## Run Docker Container
+
+```bash
 docker run -p 8080:8080 fitness-app
-Docker Compose
+```
+
+---
+
+# Docker Compose
 
 Run complete backend + MySQL:
 
+```bash
 docker-compose up --build
-Database Configuration
+```
+
+---
+
+# Database Configuration
+
+```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/fitness_db
 spring.datasource.username=root
 spring.datasource.password=yourpassword
-JWT Authentication Flow
-Register/Login User
-Receive JWT Token
-Add Token in Authorization Header
+```
+
+---
+
+# JWT Authentication Flow
+
+1. Register/Login User
+2. Receive JWT Token
+3. Add Token in Authorization Header
+
+```http
 Authorization: Bearer your_jwt_token
-Access Protected APIs
-Future Improvements
-React Frontend
-AI Workout Recommendations
-Progress Analytics Dashboard
-Email Verification
-Refresh Tokens
-Cloud Deployment
-Unit Testing
-CI/CD Pipeline
-Mobile App Integration
-Author
-Pragya Dwivedi
+```
+
+4. Access Protected APIs
+
+---
+
+# Future Improvements
+
+- React Frontend
+- AI Workout Recommendations
+- Progress Analytics Dashboard
+- Email Verification
+- Refresh Tokens
+- Cloud Deployment
+- Unit Testing
+- CI/CD Pipeline
+- Mobile App Integration
+
+---
+
+# Author
+
+## Pragya Dwivedi
 
 Aspiring Java Backend Developer focused on:
 
-Spring Boot
-Backend Development
-REST APIs
-Security
-Deployment
-Real-world Projects
-GitHub Repository
+- Spring Boot
+- Backend Development
+- REST APIs
+- Security
+- Deployment
+- Real-world Projects
 
-Fitness Tracker Backend Repository
+---
+
+# GitHub Repository
+
+:contentReference[oaicite:0]{index=0}
