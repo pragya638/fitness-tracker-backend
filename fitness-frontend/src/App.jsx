@@ -2,16 +2,16 @@ function App() {
   return (
     <div
       style={{
-        fontFamily: "Arial",
         background: "#0f172a",
-        color: "white",
         minHeight: "100vh",
+        color: "white",
         padding: "60px",
+        fontFamily: "Arial",
       }}
     >
       <h1
         style={{
-          fontSize: "60px",
+          fontSize: "64px",
           marginBottom: "20px",
         }}
       >
@@ -20,14 +20,14 @@ function App() {
 
       <p
         style={{
-          fontSize: "22px",
-          color: "#cbd5e1",
+          fontSize: "24px",
           maxWidth: "900px",
-          lineHeight: "1.6",
+          lineHeight: "1.7",
+          color: "#cbd5e1",
         }}
       >
-        Production-ready Spring Boot Backend built using JWT Authentication,
-        Spring Security, PostgreSQL, Swagger, Docker and Render Deployment.
+        Production-ready backend application built using Spring Boot,
+        JWT Authentication, PostgreSQL, Swagger, Docker, and Render Deployment.
       </p>
 
       <hr style={{ margin: "40px 0" }} />
@@ -40,20 +40,20 @@ function App() {
           fontSize: "20px",
         }}
       >
-        <li>JWT Authentication & Authorization</li>
-        <li>Spring Security Integration</li>
-        <li>REST API Architecture</li>
+        <li>JWT Authentication</li>
+        <li>Spring Security</li>
+        <li>REST APIs</li>
         <li>PostgreSQL Database</li>
-        <li>Swagger API Documentation</li>
+        <li>Swagger Documentation</li>
         <li>Docker Deployment</li>
         <li>Cloud Deployment on Render</li>
       </ul>
 
       <hr style={{ margin: "40px 0" }} />
 
-      <h2>Live Project Links</h2>
+      <h2>Project Links</h2>
 
-      <div style={{ marginTop: "25px" }}>
+      <div style={{ marginTop: "30px" }}>
 
         <a
           href="https://fitness-track-backend-vcwk.onrender.com/swagger-ui/index.html"
@@ -69,7 +69,7 @@ function App() {
             fontSize: "18px",
           }}
         >
-          Open Swagger Docs
+          Swagger API Docs
         </a>
 
         <a
@@ -92,7 +92,13 @@ function App() {
 
       <hr style={{ margin: "50px 0" }} />
 
-      <p style={{ color: "#94a3b8", fontSize: "18px" }}>
+      <p
+        style={{
+          color: "#94a3b8",
+          marginTop: "40px",
+          fontSize: "18px",
+        }}
+      >
         Developed by Pragya Dwivedi
       </p>
     </div>
