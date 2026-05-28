@@ -1,18 +1,12 @@
 # Fitness Tracker Backend API
 
-A production-ready Fitness Tracker Backend built using Spring Boot, Spring Security, JWT Authentication, PostgreSQL, Swagger/OpenAPI, Docker, and Render Cloud Deployment.
-
-The application provides secure authentication, role-based authorization, activity tracking, recommendation APIs, and cloud-hosted REST services.
+Production-ready Fitness Tracker Backend built using Spring Boot, Spring Security, JWT Authentication, PostgreSQL, Swagger, Docker, and Render Deployment.
 
 ---
 
-# Live Deployment
+# Live Demo
 
-## Backend URL
-
-https://fitness-track-backend-vcwk.onrender.com
-
-## Swagger API Documentation
+## Swagger Documentation
 
 https://fitness-track-backend-vcwk.onrender.com/swagger-ui/index.html
 
@@ -23,76 +17,50 @@ https://fitness-track-backend-vcwk.onrender.com/swagger-ui/index.html
 ## Authentication & Security
 
 - JWT Authentication
-- Spring Security Integration
-- Password Encryption using BCrypt
-- Role-Based Authorization (USER / ADMIN)
-- Stateless Session Management
-- Secure REST APIs
+- Spring Security
+- BCrypt Password Encryption
+- Role-Based Authorization
+- Stateless Authentication
 
 ## Activity Management
 
-- Create fitness activities
-- Update activities
-- Delete activities
-- Fetch user activities
-- Track workouts & progress
+- Create Activities
+- Update Activities
+- Delete Activities
+- Fetch User Activities
 
 ## Recommendation System
 
-- Generate workout recommendations
-- Fetch recommendations by user
-
-## Admin Features
-
-- View all registered users
-- Protected admin APIs
-- Role-based access control
+- Generate Recommendations
+- Fetch User Recommendations
 
 ## API Documentation
 
-- Swagger UI Integration
-- Interactive API Testing
-- OpenAPI Documentation
+- Swagger UI
+- OpenAPI Integration
 
-## DevOps & Deployment
+## Deployment
 
 - Docker Support
-- Docker Compose Support
-- GitHub Version Control
-- Cloud Deployment using Render
-- PostgreSQL Cloud Database using Neon
+- Render Cloud Deployment
+- PostgreSQL Database
 
 ---
 
 # Tech Stack
 
-| Technology | Purpose |
+| Technology | Usage |
 |---|---|
-| Java 17 | Backend Language |
+| Java 17 | Programming Language |
 | Spring Boot | Backend Framework |
-| Spring Security | Authentication & Authorization |
-| JWT | Token-Based Authentication |
+| Spring Security | Authentication |
+| JWT | Authorization |
+| PostgreSQL | Database |
 | Hibernate/JPA | ORM |
-| PostgreSQL | Cloud Database |
 | Maven | Build Tool |
 | Swagger/OpenAPI | API Documentation |
 | Docker | Containerization |
 | Render | Cloud Deployment |
-| Neon | PostgreSQL Hosting |
-| Git & GitHub | Version Control |
-| React (Planned) | Frontend |
-
----
-
-# Project Architecture
-
-```text
-React Frontend (Planned)
-          ↓
-Spring Boot REST API
-          ↓
-PostgreSQL Database (Neon Cloud)
-```
 
 ---
 
@@ -107,8 +75,8 @@ src/main/java/com/project/fitness
 ├── model
 ├── dto
 ├── security
-├── exception
 ├── config
+├── exception
 ```
 
 ---
@@ -139,7 +107,7 @@ POST /api/auth/login
 POST /api/activities
 ```
 
-### Get User Activities
+### Get All Activities
 
 ```http
 GET /api/activities
@@ -167,7 +135,7 @@ DELETE /api/activities/{id}
 POST /api/recommendation/generate
 ```
 
-### Get User Recommendations
+### Get Recommendations By User
 
 ```http
 GET /api/recommendation/user/{userId}
@@ -175,33 +143,7 @@ GET /api/recommendation/user/{userId}
 
 ---
 
-## Admin APIs
-
-### Get All Users
-
-```http
-GET /api/admin/users
-```
-
----
-
-# Swagger Documentation
-
-## Local Swagger URL
-
-```bash
-http://localhost:8080/swagger-ui/index.html
-```
-
-## Production Swagger URL
-
-```bash
-https://fitness-track-backend-vcwk.onrender.com/swagger-ui/index.html
-```
-
----
-
-# Run Project Locally
+# Run Locally
 
 ## Clone Repository
 
@@ -213,16 +155,6 @@ git clone https://github.com/pragya638/fitness-tracker-backend.git
 
 ```bash
 cd fitness-tracker-backend
-```
-
-## Configure Database
-
-Update your `application.properties` file:
-
-```properties
-spring.datasource.url=jdbc:postgresql://localhost:5432/fitness_db
-spring.datasource.username=postgres
-spring.datasource.password=yourpassword
 ```
 
 ## Run Application
@@ -249,94 +181,26 @@ docker run -p 8080:8080 fitness-app
 
 ---
 
-# Docker Compose
+# Database Configuration
 
-Run complete backend + PostgreSQL setup:
-
-```bash
-docker-compose up --build
+```properties
+spring.datasource.url=jdbc:postgresql://localhost:5432/fitness_db
+spring.datasource.username=postgres
+spring.datasource.password=yourpassword
 ```
-
----
-
-# Environment Variables
-
-Create a `.env` file:
-
-```env
-DB_URL=your_database_url
-DB_USERNAME=your_username
-DB_PASSWORD=your_password
-
-JWT_SECRET=your_jwt_secret
-```
-
-## Important
-
-- Never push `.env` file to GitHub
-- Keep secrets private
-- Use environment variables in production
-
----
-
-# JWT Authentication Flow
-
-1. Register/Login User
-2. Receive JWT Token
-3. Add Token in Authorization Header
-
-```http
-Authorization: Bearer your_jwt_token
-```
-
-4. Access Protected APIs
-
----
-
-# Deployment
-
-## Backend Hosting
-
-- Render Cloud Platform
-
-## Database Hosting
-
-- Neon PostgreSQL
-
-## API Documentation
-
-- Swagger/OpenAPI
 
 ---
 
 # Future Improvements
 
 - React Frontend Dashboard
-- AI Workout Recommendations
-- Progress Analytics Dashboard
+- AI-Based Recommendation Engine
+- Analytics Dashboard
 - Email Verification
-- JWT Refresh Tokens
+- Refresh Tokens
 - CI/CD Pipeline
 - Unit Testing
 - Mobile App Integration
-- Role-Based Dashboard UI
-- Cloud Monitoring
-
----
-
-# Screenshots
-
-## Swagger UI
-
-(Add Swagger screenshots here)
-
-## API Testing
-
-(Add Postman screenshots here)
-
-## Frontend Dashboard
-
-(Add React frontend screenshots here)
 
 ---
 
@@ -344,25 +208,16 @@ Authorization: Bearer your_jwt_token
 
 ## Pragya Dwivedi
 
-Full Stack Developer focused on scalable backend systems using:
+Aspiring Java Backend Developer focused on:
 
 - Spring Boot
-- React
-- PostgreSQL
 - REST APIs
-- JWT Authentication
+- Backend Development
+- Security
 - Cloud Deployment
-- Docker
-- Real-world Projects
 
 ---
 
 # GitHub Repository
 
 https://github.com/pragya638/fitness-tracker-backend
-
----
-
-# License
-
-This project is developed for learning, portfolio, and educational purposes.
