@@ -1,16 +1,104 @@
-# React + Vite
+# Fitness Tracker Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend landing page for the Fitness Tracker Backend API project.
 
-Currently, two official plugins are available:
+This frontend showcases:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Project Overview
+- Core Backend Features
+- Swagger Documentation Access
+- GitHub Repository Access
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# Live Frontend
 
-## Expanding the ESLint configuration
+https://fitness-tracker-frontend-sgy4.onrender.com
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+# Features
+
+- Responsive Landing Page
+- Backend API Showcase
+- Swagger Documentation Link
+- GitHub Repository Link
+- Render Deployment
+
+---
+
+# Tech Stack
+
+| Technology | Usage |
+|---|---|
+| React | Frontend Library |
+| Vite | Build Tool |
+| JavaScript | Programming Language |
+| Render | Deployment |
+
+---
+
+# Run Locally
+
+## Clone Repository
+
+```bash
+git clone https://github.com/pragya638/fitness-tracker-frontend.git
+```
+
+## Move Into Project
+
+```bash
+cd fitness-tracker-frontend
+```
+
+## Install Dependencies
+
+```bash
+npm install
+```
+
+## Start Development Server
+
+```bash
+npm run dev
+```
+
+---
+
+# Build Project
+
+```bash
+npm run build
+```
+
+---
+
+# Future Improvements
+
+- Login System
+- Register System
+- Dashboard UI
+- Activity Tracking UI
+- JWT Authentication Integration
+- Recommendation Dashboard
+
+---
+
+# Author
+
+## Pragya Dwivedi
+
+Aspiring Java Backend Developer passionate about:
+
+- Full Stack Development
+- Spring Boot
+- React
+- REST APIs
+- Deployment
+
+---
+
+# GitHub Repository
+
+https://github.com/pragya638/fitness-tracker-frontend
