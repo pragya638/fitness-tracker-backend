@@ -99,6 +99,7 @@ function App() {
           fontSize: "18px",
         }}
       >
+        Built with Spring Boot, PostgreSQL & React
         Developed by Pragya Dwivedi
       </p>
     </div>
