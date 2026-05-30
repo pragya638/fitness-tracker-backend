@@ -20,7 +20,7 @@ The application follows modern backend development practices including JWT-based
 
 ---
 
-## Features
+# Features
 
 * JWT Authentication
 * Spring Security
@@ -34,7 +34,7 @@ The application follows modern backend development practices including JWT-based
 
 ---
 
-## Tech Stack
+# Tech Stack
 
 | Technology      | Purpose                        |
 | --------------- | ------------------------------ |
@@ -50,7 +50,7 @@ The application follows modern backend development practices including JWT-based
 
 ---
 
-## Run Locally
+# Run Locally
 
 ```bash
 git clone https://github.com/pragya638/fitness-tracker-backend.git
@@ -81,7 +81,7 @@ https://fitness-track-backend-vcwk.onrender.com/swagger-ui/index.html
 
 ---
 
-## Author
+# Author
 
 Pragya Dwivedi
 
