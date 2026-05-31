@@ -11,11 +11,7 @@ import org.springframework.http.ResponseEntity;
 @RestController
 public class HealthController {
 
-    @GetMapping("/")
-    public String home() {
-        return "Fitness Tracker Backend API is Running";
-    }
-
+   
     @GetMapping("/health")
     public String health() {
         return "OK";
